@@ -1,0 +1,5 @@
+bazel-bin
+bazel-bug-repros
+bazel-out
+bazel-testlogs
+target
