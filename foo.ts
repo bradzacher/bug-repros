@@ -1,4 +1,4 @@
-import eslintReact from './foo.js';
+import eslintReact from 'eslint-plugin-react/configs/recommended.js';
 
 (eslintReact satisfies {
   plugins: {
