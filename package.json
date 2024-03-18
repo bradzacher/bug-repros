@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "typescript": "5.4.2"
+  },
+  "scripts": {
+    "prebuild": "tsc -p ./package2/tsconfig.json",
+    "build": "tsc -p ./package1/tsconfig.json"
+  }
+}

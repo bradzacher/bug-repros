@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "isolatedModules": true,
+    "outDir": "dist",
+    "preserveConstEnums": true
+  },
+  "references": [
+    {
+      "path": "../package2/tsconfig.json"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "isolatedModules": true,
+    "outDir": "dist",
+    "preserveConstEnums": true
+  },
+}
