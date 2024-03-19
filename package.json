@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "prettier": "3.2.5",
+    "rimraf": "5.0.5",
+    "typescript_53": "npm:typescript@5.3.2",
+    "typescript_54": "npm:typescript@5.4.2"
+  },
+  "scripts": {
+    "test_53": "node_modules/typescript_53/bin/tsc -p tsconfig.json --outDir dist_53",
+    "posttest_53": "prettier dist_53 --write",
+    "test_54": "node_modules/typescript_54/bin/tsc -p tsconfig.json --outDir dist_54",
+    "posttest_54": "prettier dist_54 --write",
+    "pretest": "rimraf dist_53 dist_54",
+    "test": "npm run test_53 && npm run test_54",
+    "posttest": "git diff --no-index dist_53/repro.d.ts dist_54/repro.d.ts"
+  }
+}
